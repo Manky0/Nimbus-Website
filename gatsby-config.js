@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    head: true,
     title: `Nimbus`,
     description: `Cuidando dos seus dados desde sempre :)`,
     author: `@gatsbyjs`,
@@ -49,6 +50,13 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `./src/data/`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `G-MDN3XQVQK6`,
+        head: true,
       },
     },
   ],
