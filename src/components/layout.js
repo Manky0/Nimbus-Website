@@ -5,10 +5,10 @@ import { GlobalStyle } from "./styles/GlobalStyles"
 const Layout = ({ children }) => {
   return (
     <>
-      <GlobalStyle />
       <Header />
 
       <main>{children}</main>
+      <GlobalStyle />
     </>
   )
 }
