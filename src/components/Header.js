@@ -3,12 +3,14 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import { FaBars } from "react-icons/fa"
 import { menuData } from "../data/MenuData"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { Button } from "./Button"
 
 const Header = () => {
   return (
     <Nav>
       <NavLink to="/">NIMBUS</NavLink>
+      <GatsbyImage dir="../assets/images/logo.jps" />
       <Bars />
       <NavMenu>
         {menuData.map((item, index) => (
@@ -30,13 +32,14 @@ const Header = () => {
 export default Header
 
 const Nav = styled.nav`
-  background: transparent;
-  height: 80px;
+  background: rgba(0, 0, 0, 0.75);
+  height: 65px;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1300px) / 2);
   z-index: 100;
-  position: relative;
+  position: sticky;
+  top: 0;
 `
 
 const NavLink = styled(Link)`
@@ -44,6 +47,7 @@ const NavLink = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none;
+  font-weight: 500;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
@@ -82,3 +86,5 @@ const NavBtn = styled.div`
     display: none;
   }
 `
+
+const HeaderLogo = styled.image``

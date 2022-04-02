@@ -59,10 +59,13 @@ const Projects = ({ heading }) => {
   }
 
   return (
-    <ProjectsContainer>
-      <ProjectsHeading>{heading}</ProjectsHeading>
-      <ProjectWrapper>{getProjects(data)}</ProjectWrapper>
-    </ProjectsContainer>
+    <>
+      <GradientContainer />
+      <ProjectsContainer>
+        <ProjectsHeading>{heading}</ProjectsHeading>
+        <ProjectWrapper>{getProjects(data)}</ProjectWrapper>
+      </ProjectsContainer>
+    </>
   )
 }
 
@@ -72,6 +75,12 @@ const ProjectsContainer = styled.div`
   min-height: 100vh;
   padding: 5rem calc((100vw - 1300px) / 2);
   color: #fff;
+`
+const GradientContainer = styled.div`
+  height: 50px;
+  margin-top: -20px;
+  //padding: 5rem calc((100vw - 1300px) / 2);
+  background: linear-gradient(rgba(0, 0, 0, 1), transparent);
 `
 
 const ProjectsHeading = styled.div`
