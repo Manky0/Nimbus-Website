@@ -5,16 +5,17 @@ import { FaBars } from "react-icons/fa"
 import { menuData } from "../data/MenuData"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { Button } from "./Button"
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 const Header = () => {
   return (
     <Nav>
-      <NavLink to="/">NIMBUS</NavLink>
+      <NavLogo to="/">NIMBUS</NavLogo>
       <GatsbyImage dir="../assets/images/logo.jps" />
       <Bars />
       <NavMenu>
         {menuData.map((item, index) => (
-          <NavLink to={item.link} key={index}>
+          <NavLink onClick={() => scrollTo(item.link)} key={index}>
             {item.title}
           </NavLink>
         ))}
@@ -42,13 +43,27 @@ const Nav = styled.nav`
   top: 0;
 `
 
-const NavLink = styled(Link)`
+const NavLink = styled.button`
   color: #fff;
+  background-color: transparent;
+  border-color: transparent;
   display: flex;
   align-items: center;
   text-decoration: none;
   font-weight: 500;
+  font-size: 1em;
   padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+`
+
+const NavLogo = styled(Link)`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2em;
   height: 100%;
   cursor: pointer;
 `

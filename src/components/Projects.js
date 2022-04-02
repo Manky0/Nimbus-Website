@@ -61,7 +61,7 @@ const Projects = ({ heading }) => {
   return (
     <>
       <GradientContainer />
-      <ProjectsContainer>
+      <ProjectsContainer id="projects">
         <ProjectsHeading>{heading}</ProjectsHeading>
         <ProjectWrapper>{getProjects(data)}</ProjectWrapper>
       </ProjectsContainer>

@@ -5,7 +5,7 @@ import Video from "../assets/videos/video.mp4"
 
 const Hero = () => {
   return (
-    <HeroContainer>
+    <HeroContainer id="top">
       <HeroBg>
         <VideoBg src={Video} type="video/mp4" autoPlay loop muted playsInline />
       </HeroBg>
