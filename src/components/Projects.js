@@ -77,8 +77,8 @@ const ProjectsContainer = styled.div`
   color: #fff;
 `
 const GradientContainer = styled.div`
-  height: 50px;
-  margin-top: -20px;
+  height: 60px;
+  margin-top: -15px;
   //padding: 5rem calc((100vw - 1300px) / 2);
   background: linear-gradient(rgba(0, 0, 0, 1), transparent);
 `
@@ -94,7 +94,7 @@ const ProjectsHeading = styled.div`
 const ProjectWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
+  grid-gap: 30px;
   justify-items: center;
   padding: 0 2rem;
 
