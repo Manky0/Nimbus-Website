@@ -11,8 +11,11 @@ const Hero = () => {
       </HeroBg>
       <HeroContent>
         <HeroItens>
-          <HeroH1>AAAAAAAAAA</HeroH1>
-          <HeroP>bbbbbbbbbbbb</HeroP>
+          <HeroH1>Bem-vindo à Nimbus!</HeroH1>
+          <HeroP>
+            Sua startup de data science para previsão de séries temporais
+            metereológicas.
+          </HeroP>
           <Button primary="true" round="true" big="true" to="/about">
             Saiba mais
           </Button>
@@ -92,14 +95,15 @@ const HeroItens = styled.div`
 `
 
 const HeroH1 = styled.h1`
-  font-size: clamp(1.5rem, 6vw, 4rem);
+  font-size: clamp(1.5rem, 5.6vw, 4rem);
   margin-bottom: 1.5rem;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   padding: 0 1rem;
 `
 
 const HeroP = styled.p`
-  font-size: clamp(1rem, 3vw, 3rem);
+  font-size: clamp(1rem, 2.3vw, 3rem);
   margin-bottom: 2rem;
-  font-weight: 400;
+  font-weight: 200;
+  color: #7f8087;
 `

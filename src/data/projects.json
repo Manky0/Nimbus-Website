@@ -1,0 +1,26 @@
+[
+    {
+        "img": "../assets/images/clouddata.jpg",
+        "alt": "Cloud Data",
+        "name": "Previsão Temporal",
+        "button": "Ver mais"
+    },
+    {
+        "img": "../assets/images/comingsoon.jpg",
+        "alt": "Coming Soon",
+        "name": "Em breve",
+        "button": "Ver mais"
+    },
+    {
+        "img": "../assets/images/comingsoon.jpg",
+        "alt": "Coming Soon",
+        "name": "Em breve",
+        "button": "Ver mais"
+    },
+    {
+        "img": "../assets/images/comingsoon.jpg",
+        "alt": "Coming Soon",
+        "name": "Em breve",
+        "button": "Ver mais"
+    }
+]

@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import { FaBars } from "react-icons/fa"
-import { menuData } from "./data/MenuData"
+import { menuData } from "../data/MenuData"
 import { Button } from "./Button"
 
 const Header = () => {
@@ -17,11 +17,12 @@ const Header = () => {
           </NavLink>
         ))}
       </NavMenu>
+      {/*
       <NavBtn>
         <Button primary="true" round="true" to="/contact">
           - - -
         </Button>
-      </NavBtn>
+      </NavBtn> */}
     </Nav>
   )
 }

@@ -1,1 +1,1 @@
-aaaaa
+A Nimbus é uma startup voltada para área tecnológica, nosso foco é a pesquisa e a análise de dados climáticos e meteorológicos. Criada no âmbito da Universidade Federal do Pará, nossa missão é desenvolver dispositivos para atender cientistas, órgãos e empresas do ramo.
