@@ -16,23 +16,44 @@ const Footer = () => {
           <img src={logopng} alt="logo-png" />
           <h5>© 2022 Nimbus Data Science | All Rights Reserved</h5>
           <p>
-            <AiOutlineEnvironment size={17} style={{ marginRight: 5 }} />
-            R. Augusto Corrêa, 01 - Guamá,
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
+              <AiOutlineEnvironment size={17} style={{ marginRight: 5 }} />
+              R. Augusto Corrêa, 01 - Guamá, <br />
+              Belém - PA, 66075-110
+            </div>
           </p>
-          <p> Belém - PA, 66075-110</p>
         </FooterDesc>
         <FooterLinkItens>
           <FooterLinkTitle>Mídias Sociais</FooterLinkTitle>
           <FooterLink to="https://www.instagram.com/nimbus_ufpa/">
-            <AiOutlineInstagram size={17} style={{ marginRight: 5 }} />
-            Instagram
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
+              <AiOutlineInstagram size={17} style={{ marginRight: 5 }} />
+              Instagram
+            </div>
           </FooterLink>
         </FooterLinkItens>
         <FooterLinkItens>
           <FooterLinkTitle>Fale com a gente</FooterLinkTitle>
           <FooterLink>
-            <AiOutlineMail size={17} style={{ marginRight: 5 }} />
-            nimbuscloud100inc@gmail.com
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
+              <AiOutlineMail size={17} style={{ marginRight: 5 }} />
+              <text> nimbuscloud100inc@gmail.com</text>
+            </div>
           </FooterLink>
         </FooterLinkItens>
       </FooterLinksWrapper>
