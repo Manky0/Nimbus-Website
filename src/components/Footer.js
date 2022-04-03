@@ -6,13 +6,15 @@ import {
   AiOutlineMail,
   AiOutlineEnvironment,
 } from "react-icons/ai"
+import logopng from "../assets/images/logo.png"
 
 const Footer = () => {
   return (
     <FooterContainer>
       <FooterLinksWrapper>
         <FooterDesc>
-          <h1>Nimbus</h1>
+          <img src={logopng} alt="logo-png" />
+          <h5>© 2022 Nimbus Data Science | All Rights Reserved</h5>
           <p>
             <AiOutlineEnvironment size={17} style={{ marginRight: 5 }} />
             R. Augusto Corrêa, 01 - Guamá,
@@ -41,7 +43,7 @@ const Footer = () => {
 export default Footer
 
 const FooterContainer = styled.div`
-  padding: 5rem calc((100vw - 1250px) / 2);
+  padding: 5rem calc((100vw - 1300px) / 2);
 
   color: white;
   background: black;
@@ -50,9 +52,11 @@ const FooterDesc = styled.div`
   padding: 0 2rem;
   margin-bottom: 16px;
 
-  h1 {
-    margin-bottom: 3rem;
-    color: #831f8c;
+  img {
+    //margin-bottom: 2.5rem;
+  }
+  h5 {
+    margin-bottom: 2.5rem;
   }
 
   @media screen and (max-width: 400px) {

@@ -81,7 +81,7 @@ const HeroContent = styled.div`
   z-index: 3;
   height: calc(100vh - 80px);
   max-height: 100%;
-  padding: 0rem calc((100vw - 1300px) / 2);
+  padding: 0rem calc((100vw - 1400px) / 2);
 `
 
 const HeroItens = styled.div`
@@ -103,11 +103,12 @@ const HeroH1 = styled.h1`
   margin-bottom: 1.5rem;
   letter-spacing: 1px;
   padding: 0 1rem;
+  color: #dfebf7;
 `
 
 const HeroP = styled.p`
   font-size: clamp(1rem, 2.3vw, 3rem);
   margin-bottom: 2rem;
   font-weight: 200;
-  color: #7f8087;
+  color: #8b8c94;
 `

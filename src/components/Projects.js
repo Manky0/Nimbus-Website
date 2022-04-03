@@ -37,7 +37,7 @@ const Projects = ({ heading }) => {
           />
           <ProjectInfo>
             <TextWrap>
-              {item.node.alt == "Coming Soon" ? (
+              {item.node.alt === "Coming Soon" ? (
                 <BsClockHistory size={21} />
               ) : (
                 <WiDayRainWind size={23} />
@@ -45,12 +45,15 @@ const Projects = ({ heading }) => {
               <ProjectTitle>{item.node.name}</ProjectTitle>
             </TextWrap>
             <Button
-              to="/projects"
+              to={item.node.to}
               primary="true"
               round="true"
               css={`
                 position: absolute;
                 top: 420px;
+                @media screen and (max-width: 868px) {
+                  top: 240px;
+                }
                 font-size: 14px;
               `}
             >
@@ -77,7 +80,7 @@ const Projects = ({ heading }) => {
 export default Projects
 
 const ProjectsContainer = styled.div`
-  min-height: 90vh;
+  min-height: 60vh;
   padding: 5rem calc((100vw - 1300px) / 2);
   color: #fff;
 `
@@ -108,17 +111,22 @@ const ProjectWrapper = styled.div`
   }
 
   @media screen and (max-width: 868px) {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
   }
 `
 
 const ProjectCard = styled.div`
-  line-height: 2;
+  //line-height: 2;
   width: 100%;
   height: 500px;
   position: relative;
   border-radius: 10px;
   transition: 0.2s ease;
+
+  @media screen and (max-width: 868px) {
+    height: 300px;
+  }
 `
 
 const ProjectImg = styled(GatsbyImage)`
@@ -140,6 +148,10 @@ const ProjectInfo = styled.div`
   align-items: flex-start;
   padding: 0 2rem;
 
+  @media screen and (max-width: 868px) {
+    padding: 0.8rem;
+  }
+
   @media screen and (max-width: 280px) {
     padding: 0 1rem;
   }
@@ -150,6 +162,11 @@ const TextWrap = styled.div`
   align-items: center;
   position: absolute;
   top: 375px;
+
+  @media screen and (max-width: 868px) {
+    top: 200px;
+    margin-top: -8px;
+  }
 `
 
 const ProjectTitle = styled.div`

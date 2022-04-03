@@ -12,7 +12,7 @@ const About = () => {
       <ContentWrapper>
         <ColumnOne>
           <Abouts>
-            <img src={headImage} height="50px" />
+            <img src={headImage} height="50px" alt="head" />
             <h3>Pesquisa</h3>
             <p>
               Nosso trabalho tem como foco desenvolver a solução de problemas
@@ -21,7 +21,7 @@ const About = () => {
             </p>
           </Abouts>
           <Abouts>
-            <img src={atomImage} height="50px" />
+            <img src={atomImage} height="50px" alt="atom" />
             <h3>Desenvolvimento</h3>
             <p>
               Projetamos, construimos e remodelamos produtos por meio de dados
@@ -39,11 +39,11 @@ const About = () => {
 export default About
 
 const AboutContainer = styled.div`
-  min-height: 78vh;
+  //min-height: 50vh;
   width: 100%;
   background: #f5f5f3;
   color: #000;
-  padding: 5rem calc((100vw - 1300px) / 2);
+  padding: 5rem calc((100vw - 1500px) / 2);
   height: 100%;
 `
 
@@ -67,6 +67,7 @@ const ContentWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 0 2rem;
+  margin-bottom: 50px;
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -97,24 +98,6 @@ const Abouts = styled.div`
   }
 `
 
-const CoumnTwo = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 2rem;
-  grid-gap: 15px;
-
-  @media screen and (max-width: 500px) {
-    grid-template-columns: 1fr;
-  }
-`
-
-const Text = styled.div`
-  border-radius: 15px;
-  background: #831f8c;
-  height: 100%;
-  padding: 1rem;
-  color: white;
-`
 const VideoBg = styled.video`
   margin-top: 2rem;
   height: 100%;

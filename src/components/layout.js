@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
     <>
       <GlobalStyle />
       <Header />
-      <main>{children}</main>
+      <main style={{ minHeight: "60vh" }}>{children}</main>
       <Footer />
     </>
   )

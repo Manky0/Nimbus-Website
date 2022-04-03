@@ -1,26 +1,30 @@
 [
     {
         "img": "../assets/images/clouddata.jpg",
-        "alt": "Cloud Data",
+        "alt": "Forecast",
         "name": "Previsão Temporal",
-        "button": "Ver mais"
+        "button": "Ver mais",
+        "to":""
+    },
+    {
+        "img": "../assets/images/arduino.jpg",
+        "alt": "Data Collect",
+        "name": "Coleta Meteorológica",
+        "button": "Ver mais",
+        "to":""
     },
     {
         "img": "../assets/images/comingsoon.jpg",
         "alt": "Coming Soon",
         "name": "Em breve",
-        "button": "Ver mais"
+        "button": "Ver mais",
+        "to":""
     },
     {
         "img": "../assets/images/comingsoon.jpg",
         "alt": "Coming Soon",
         "name": "Em breve",
-        "button": "Ver mais"
-    },
-    {
-        "img": "../assets/images/comingsoon.jpg",
-        "alt": "Coming Soon",
-        "name": "Em breve",
-        "button": "Ver mais"
+        "button": "Ver mais",
+        "to":""
     }
 ]
