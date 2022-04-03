@@ -16,9 +16,9 @@ const Hero = () => {
             Sua startup de data science para previsão de séries temporais
             metereológicas.
           </HeroP>
-          <Button primary="true" round="true" big="true" to="/about">
+          {/*<Button primary="true" round="true" big="true" to="/about">
             Saiba mais
-          </Button>
+  </Button>*/}
         </HeroItens>
       </HeroContent>
     </HeroContainer>

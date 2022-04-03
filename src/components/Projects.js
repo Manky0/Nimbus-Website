@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { Button } from "./Button"
 import { WiDayRainWind } from "react-icons/wi"
+import { BsClockHistory } from "react-icons/bs"
 
 const Projects = ({ heading }) => {
   const data = useStaticQuery(graphql`
@@ -36,7 +37,11 @@ const Projects = ({ heading }) => {
           />
           <ProjectInfo>
             <TextWrap>
-              <WiDayRainWind size={23} />
+              {item.node.alt == "Coming Soon" ? (
+                <BsClockHistory size={21} />
+              ) : (
+                <WiDayRainWind size={23} />
+              )}
               <ProjectTitle>{item.node.name}</ProjectTitle>
             </TextWrap>
             <Button

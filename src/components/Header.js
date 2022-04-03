@@ -64,6 +64,7 @@ const NavLogo = styled(Link)`
   text-decoration: none;
   font-weight: 700;
   font-size: 1.2em;
+  padding: 0 1rem;
   height: 100%;
   cursor: pointer;
 `
