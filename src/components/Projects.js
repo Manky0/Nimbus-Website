@@ -174,4 +174,8 @@ const ProjectTitle = styled.div`
   font-size: 1rem;
   margin-left: 0.5rem;
   color: white;
+
+  @media screen and (max-width: 400px) {
+    font-size: 0.7rem;
+  }
 `

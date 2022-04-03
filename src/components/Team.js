@@ -75,6 +75,10 @@ const ColumnOne = styled.div`
   column-gap: 1rem;
   row-gap: 1rem;
   margin-bottom: 1rem;
+
+  @media screen and (max-width: 400px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `
 const ColumnTwo = styled.div`
   //margin-left: 1rem;
