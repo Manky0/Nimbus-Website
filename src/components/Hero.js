@@ -11,7 +11,11 @@ const Hero = () => {
       </HeroBg>
       <HeroContent>
         <HeroItens>
-          <HeroH1>Bem-vindo à Nimbus!</HeroH1>
+          <HeroH1>
+            <text>Bem-vindo à </text>
+            <text style={{ color: "#831F8C" }}>Nimbus</text>
+            <text>!</text>
+          </HeroH1>
           <HeroP>
             Sua startup de data science para previsão de séries temporais
             metereológicas.

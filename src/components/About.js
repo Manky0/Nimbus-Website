@@ -39,6 +39,7 @@ const About = () => {
 export default About
 
 const AboutContainer = styled.div`
+  min-height: 78vh;
   width: 100%;
   background: #f5f5f3;
   color: #000;
@@ -48,7 +49,7 @@ const AboutContainer = styled.div`
 
 const TopLine = styled.p`
   color: #831f8c;
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding-left: 2rem;
   margin-bottom: 0.75;
 `
@@ -56,8 +57,9 @@ const TopLine = styled.p`
 const Description = styled.p`
   text-align: start;
   padding-left: 2rem;
+  padding-right: 2rem;
   margin-bottom: 2.5rem;
-  font-size: clamp(1.5rem, 5vw, 2rem);
+  font-size: clamp(1.5rem, 5vw, 2.3rem);
   font-weight: bold;
 `
 

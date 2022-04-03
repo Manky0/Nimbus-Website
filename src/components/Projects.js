@@ -65,7 +65,7 @@ const Projects = ({ heading }) => {
 
   return (
     <>
-      <GradientContainer />
+      <GradientContainerTop />
       <ProjectsContainer id="projects">
         <ProjectsHeading>{heading}</ProjectsHeading>
         <ProjectWrapper>{getProjects(data)}</ProjectWrapper>
@@ -77,11 +77,11 @@ const Projects = ({ heading }) => {
 export default Projects
 
 const ProjectsContainer = styled.div`
-  min-height: 100vh;
+  min-height: 90vh;
   padding: 5rem calc((100vw - 1300px) / 2);
   color: #fff;
 `
-const GradientContainer = styled.div`
+const GradientContainerTop = styled.div`
   height: 60px;
   margin-top: -15px;
   //padding: 5rem calc((100vw - 1300px) / 2);
@@ -89,7 +89,7 @@ const GradientContainer = styled.div`
 `
 
 const ProjectsHeading = styled.div`
-  font-size: clamp(1.2rem, 5vw, 3rem);
+  font-size: clamp(1.5rem, 5vw, 2.3rem);
   font-weight: bold;
   text-align: center;
   margin-bottom: 5rem;
