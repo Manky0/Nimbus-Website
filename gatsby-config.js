@@ -2,9 +2,9 @@ module.exports = {
   siteMetadata: {
     head: true,
     title: `Nimbus`,
-    description: `Cuidando dos seus dados desde sempre :)`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    description: `Sua startup de data science para previsão de séries temporais metereológicas!`,
+    author: `@Manky0`,
+    siteUrl: `https://nimbusufpa.netlify.app/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
