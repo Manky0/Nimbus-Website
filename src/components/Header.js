@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import { FaBars } from "react-icons/fa"
 import { menuData } from "../data/MenuData"
-import { GatsbyImage } from "gatsby-plugin-image"
 import { Button } from "./Button"
 import scrollTo from "gatsby-plugin-smoothscroll"
 import logopng from "../assets/images/logo.png"
@@ -14,7 +13,6 @@ const Header = () => {
       <NavLogo to="/">
         <img src={logopng} alt="logo-png" />
       </NavLogo>
-      <GatsbyImage dir="../assets/images/logo.jps" />
       <Bars onClick={() => null} />
       <NavMenu>
         {menuData.map((item, index) => (

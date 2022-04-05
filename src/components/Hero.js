@@ -13,7 +13,7 @@ const Hero = () => {
         <HeroItens>
           <HeroH1>
             <text>Bem-vindo à </text>
-            <text style={{ color: "#831F8C" }}>Nimbus</text>
+            <NimbusText>Nimbus</NimbusText>
             <text>!</text>
           </HeroH1>
           <HeroP>
@@ -58,6 +58,11 @@ const HeroContainer = styled.div`
       linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
   }
 `
+const NimbusText = styled.text`
+  background: linear-gradient(to right, #831f8c, #17b9cf);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+`
 
 const HeroBg = styled.div`
   position: absolute;
@@ -99,7 +104,7 @@ const HeroItens = styled.div`
 `
 
 const HeroH1 = styled.h1`
-  font-size: clamp(1.5rem, 5.6vw, 4rem);
+  font-size: clamp(2rem, 5.9vw, 4rem);
   margin-bottom: 1.5rem;
   letter-spacing: 1px;
   padding: 0 1rem;
@@ -107,7 +112,7 @@ const HeroH1 = styled.h1`
 `
 
 const HeroP = styled.p`
-  font-size: clamp(1rem, 2.3vw, 3rem);
+  font-size: clamp(1.2rem, 2vw, 3rem);
   margin-bottom: 2rem;
   font-weight: 200;
   color: #8b8c94;

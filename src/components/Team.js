@@ -1,5 +1,7 @@
 import React from "react"
 import styled from "styled-components"
+import teamgabriel from "../assets/images/team-gabriel.jpeg"
+import teamluiz from "../assets/images/team-luiz.jpg"
 
 const Team = () => {
   return (
@@ -7,35 +9,41 @@ const Team = () => {
       <ContentWrapper>
         <ColumnOne>
           <Person>
-            <PersonImage src="https://github.com/npm.png" />
+            <PersonImage src="https://github.com/npm.png" alt="aizooliveira" />
             <PersonInfo>
               <h4>Aizo Oliveira</h4>
               <p>Marketing</p>
             </PersonInfo>
           </Person>
           <Person>
-            <PersonImage src="https://i.imgur.com/Kc1gjC0.jpeg" />
+            <PersonImage src={teamgabriel} alt="gabrielnobre" />
             <PersonInfo>
               <h4>Gabriel Nobre</h4>
               <p>CEO</p>
             </PersonInfo>
           </Person>
           <Person>
-            <PersonImage src="https://i.imgur.com/G7gJPEF.jpg" />
+            <PersonImage src={teamluiz} alt="luizeduardo" />
             <PersonInfo>
               <h4>Luiz Eduardo</h4>
               <p>Projetista</p>
             </PersonInfo>
           </Person>
           <Person>
-            <PersonImage src="https://github.com/ASTRAson.png" />
+            <PersonImage
+              src="https://github.com/ASTRAson.png"
+              alt="ryancarlos"
+            />
             <PersonInfo>
               <h4>Ryan Carlos</h4>
               <p>Programador</p>
             </PersonInfo>
           </Person>
           <Person>
-            <PersonImage src="https://github.com/Manky0.png" />
+            <PersonImage
+              src="https://github.com/Manky0.png"
+              alt="valdineirodrigues"
+            />
             <PersonInfo>
               <h4>Valdinei Rodrigues</h4>
               <p>Programador</p>
