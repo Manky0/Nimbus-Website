@@ -30,7 +30,7 @@ const About = () => {
             </p>
           </Abouts>
         </ColumnOne>
-        <VideoBg src={Video} type="video/mp4" autoPlay loop muted playsInline />
+        <ImageBg src="https://i.imgur.com/g7W0Q7s.gif" alt="dataplanet" />
       </ContentWrapper>
     </AboutContainer>
   )
@@ -98,7 +98,7 @@ const Abouts = styled.div`
   }
 `
 
-const VideoBg = styled.video`
+const ImageBg = styled.img`
   margin-top: 2rem;
   height: 100%;
   width: 100%;

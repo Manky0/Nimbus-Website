@@ -21,7 +21,7 @@ const Team = () => {
             </PersonInfo>
           </Person>
           <Person>
-            <PersonImage src="https://github.com/npm.png" />
+            <PersonImage src="https://i.imgur.com/G7gJPEF.jpg" />
             <PersonInfo>
               <h4>Luiz Eduardo</h4>
               <p>Projetista</p>
@@ -105,8 +105,8 @@ const Person = styled.div`
 `
 
 const PersonImage = styled.img`
-  width: 70px;
-  height: 70px;
+  width: 75px;
+  height: 75px;
   border-radius: 100%;
   border: 3px solid black;
 `
