@@ -14,7 +14,7 @@ const Team = () => {
             </PersonInfo>
           </Person>
           <Person>
-            <PersonImage src="https://github.com/GLNobre.png" />
+            <PersonImage src="https://i.imgur.com/Kc1gjC0.jpeg" />
             <PersonInfo>
               <h4>Gabriel Nobre</h4>
               <p>CEO</p>
