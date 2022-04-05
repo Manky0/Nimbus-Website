@@ -2,7 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import atomImage from "../assets/images/atom.png"
 import headImage from "../assets/images/head.png"
-import Video from "../assets/videos/video-2.mp4"
 
 const About = () => {
   return (
