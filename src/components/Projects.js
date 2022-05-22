@@ -15,6 +15,7 @@ const Projects = ({ heading }) => {
             alt
             button
             name
+            to
             img {
               childImageSharp {
                 gatsbyImageData

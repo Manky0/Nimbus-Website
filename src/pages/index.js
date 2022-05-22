@@ -9,7 +9,7 @@ import Team from "../components/Team"
 
 const IndexPage = () => (
   <Layout>
-    <Seo title="Nimbus Data Science" />
+    <Seo title="Inicio" />
     <Hero />
     <Projects heading="Nossos Projetos" />
     <About />
